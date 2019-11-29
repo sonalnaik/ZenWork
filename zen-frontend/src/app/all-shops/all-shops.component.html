@@ -15,7 +15,8 @@
     <ng-template pTemplate="body" let-rowData let-columns="columns">
         <tr>
             <td>
-                <button pButton icon="fa-search" (click)="showDetail(rowData)">show</button>
+                <button pButton icon="fa-search" (click)="showDetail(rowData)"><img style="height: 23px;
+                    width: 25px" src="./assets/magnify.png"></button>
             </td>
 
             <td *ngFor="let col of columns">
@@ -27,7 +28,7 @@
 
 <p-dialog *ngIf="display" header="{{row.name}} Details" [(visible)]="display" [modal]="true" [responsive]="true" [style]="{width: '350px', minWidth: '200px'}" [minY]="70" 
  [baseZIndex]="10000">
-    <div class="form-group">
+    <div class="form-group" style="display:flex">
         <label> Shop Name:</label>
         <div>  {{row.name}}</div>
     </div>

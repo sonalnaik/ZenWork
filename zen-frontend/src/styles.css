@@ -9,7 +9,7 @@
 }
 .sidenav {
     height: 100%;
-    width: 185px;
+    width: 195px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -58,3 +58,4 @@
     font-size: 19px;
   }
   
+.ui-table{padding: 7%}

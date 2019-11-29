@@ -18,9 +18,10 @@ export class AllShopsComponent implements OnInit {
   ngOnInit() {
     this.getShopList();
     this.cols = [
-      { field: 'name', header: 'Shop Name' },
-      { field: 'email', header: 'Email' },
-      { field: 'created', header: 'Created Date' },
+
+      { field: 'name', header: 'Shop Name', width: '25%' },
+      { field: 'email', header: 'Email',width: '15%' },
+      { field: 'created', header: 'Created Date',width: '25%' },
      
   ];
   }
