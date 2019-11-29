@@ -12,7 +12,7 @@ const subUserRouteFile= require("./routes/subUserRoute");
 
 // //connect to mongodb
 //mongoose.connect("mongodb://3.14.207.69:27017/questionsDb");//if no db created it will create one
-mongoose.connect("mongodb://localhost:27017/zenwork");//if no db created it will create one
+mongoose.connect("mongodb://localhost:27017/zenwork");//if no db created it will create one hihi
 // //on connect
 mongoose.connection.on('connected',()=>{
     console.log("connected to mongodb");
