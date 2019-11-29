@@ -1,0 +1,24 @@
+.addMore{
+    font-size: 15px;
+    font-weight: bold;
+    color: green;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.deleteItem{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.error-class{
+    color: red;
+    font-size:14px
+}
+:host >>>.ui-multiselect {
+    display: flex !important;
+    margin-top: 14px !important;
+    margin-bottom: 10px !important;
+
+}
