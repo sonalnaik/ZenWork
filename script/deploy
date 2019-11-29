@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh ubuntu@18.225.36.36 <<EOF
+ssh root@18.225.36.36 <<EOF
    cd ~/ZenWork/zen-backend
     git pull origin master
     curl -o-   https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh    | bash
