@@ -30,26 +30,26 @@
  [baseZIndex]="10000">
     <div class="form-group" style="display:flex">
         <label> Shop Name:</label>
-        <div>  {{row.name}}</div>
+        <div class="popupData">  {{row.name}}</div>
     </div>
-    <div class="form-group">
+    <div class="form-group" style="display:flex">
         <label> Email:</label>
-        <div>  {{row.email}}</div>
+        <div class="popupData">  {{row.email}}</div>
     </div>
     <div class="form-group">
         <label> Address:</label>
         <div *ngFor="let address of row.address"> 
-            Pincode:<span>{{address.pincode}}</span>
-            Locality:<span>{{address.locality}}</span>
-            plot N:<span>{{address.plotNo}}</span>
+            <b>Pincode:&nbsp;&nbsp;</b> <span>{{address.pincode}}</span>&nbsp;&nbsp;
+            <b>Locality:&nbsp;&nbsp;</b> <span>{{address.locality}}</span>&nbsp;&nbsp;
+            <b>plot No:&nbsp;&nbsp;</b> <span>{{address.plotNo}}</span>&nbsp;&nbsp;
         </div>
     </div>
    
     <div class="form-group">
         <label> Sub Users:</label>
         <div *ngFor="let subuser of row.subUser"> 
-            Name:<span>{{subuser.name}}</span>
-            Eamil:<span>{{subuser.email}}</span>
+            <b> Name:</b>&nbsp;&nbsp;<span>{{subuser.name}}</span>&nbsp;&nbsp;
+                <b> Eamil:</b>&nbsp;&nbsp;<span>{{subuser.email}}</span>&nbsp;&nbsp;
            </div>
     </div>
 </p-dialog>
