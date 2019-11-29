@@ -12,7 +12,7 @@ const subUserRouteFile= require("./routes/subUserRoute");
 
 // //connect to mongodb
 //mongoose.connect("mongodb://3.14.207.69:27017/questionsDb");//if no db created it will create one
-mongoose.connect("mongodb://localhost/zenwork");//if no db created it will create one %%%test222
+mongoose.connect("mongodb://localhost:27017/zenwork");//if no db created it will create one %%%test222
 // //on connect
 mongoose.connection.on('connected',()=>{
     console.log("connected to mongodb");
@@ -34,10 +34,10 @@ app.use(bodyparser.json());
 //*************************************** */
 //app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('public'));
-app.use(express.static('dist'));
+app.use(express.static('dist/chatz'));
 // Catch all other routes and return the index file
 // app.get('*', (req, res) => {
-// res.sendFile(path.join(__dirname+ '/public/dist/index.html'));
+// res.sendFile(path.join(__dirname+ '/dist/chatz/index.html'));
 // });
 //*********************************** */
 
@@ -55,9 +55,9 @@ app.listen(PORT,()=>{
 
 //to check server is running or not, we'll send some response to some route for ex '/' by using get method.
 //now whenever server will run, it will send some response
-app.get('/',(req,res)=>{
-    res.send('hello world')//server sending response
-})
+// app.get('/',(req,res)=>{
+//     res.send('hello world')//server sending response
+// })
 
 //add middlewares for routing
 
