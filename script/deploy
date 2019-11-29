@@ -1,0 +1,23 @@
+#!/bin/sh
+ssh ubuntu@18.225.36.36 <<EOF
+    cd ~/ZenWork
+    git pull origin master
+    curl -o-   https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh    | bash
+    . ~/.nvm/nvm.sh
+    nvm install v10.11.0
+    cd zen-frontend
+    ng build --aot
+    cd ..
+    cd zen-backend
+    rm -rf dist
+    cd ..
+    cd zen-frontend
+    cp dist /home/ubuntu/ZenWork/zen-backend
+    cd ..
+    cd zen-backend
+    npm install
+    node entry.js
+    npm install -g nodemon pm2
+    pm2 restart ecosystem.config.js
+    exit
+EOF
