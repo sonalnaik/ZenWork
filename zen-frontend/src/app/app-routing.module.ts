@@ -9,7 +9,7 @@ import { SubUserComponent } from './sub-user/sub-user.component';
 import { AllShopsComponent } from './all-shops/all-shops.component';
 import { AuthGuard } from './auth.guard';
 const routes:Routes=[
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full'}, 
+  { path: '', redirectTo: '/add-shop', pathMatch: 'full'}, 
   { path:'login', component:LoginComponent},
   { path:'register', component:RegisterComponent},
   { path:'dashboard', component:DashboardComponent, canActivate: [AuthGuard]},
