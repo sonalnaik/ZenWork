@@ -10,7 +10,7 @@ const routeFile =require("./routes/adminRoutes");
 const shopRouteFile= require("./routes/shopRoute");
 const subUserRouteFile= require("./routes/subUserRoute");
 
-// //connect to mongodb 1
+// //connect to mongodb 2222
 //mongoose.connect("mongodb://3.14.207.69:27017/questionsDb");//if no db created it will create one
 mongoose.connect("mongodb://localhost:27017/zenwork");//if no db created it will create one testingg
 // //on connect
