@@ -490,11 +490,11 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\MEAN_NEW\ZenWork\zen-frontend\src\styles.css */"./src/styles.css");
-__webpack_require__(/*! E:\MEAN_NEW\ZenWork\zen-frontend\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
-__webpack_require__(/*! E:\MEAN_NEW\ZenWork\zen-frontend\node_modules\primeicons\primeicons.css */"./node_modules/primeicons/primeicons.css");
-__webpack_require__(/*! E:\MEAN_NEW\ZenWork\zen-frontend\node_modules\primeng\resources\themes\nova-light\theme.css */"./node_modules/primeng/resources/themes/nova-light/theme.css");
-module.exports = __webpack_require__(/*! E:\MEAN_NEW\ZenWork\zen-frontend\node_modules\primeng\resources\primeng.min.css */"./node_modules/primeng/resources/primeng.min.css");
+__webpack_require__(/*! E:\MEAN\ZenWork\zen-frontend\src\styles.css */"./src/styles.css");
+__webpack_require__(/*! E:\MEAN\ZenWork\zen-frontend\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+__webpack_require__(/*! E:\MEAN\ZenWork\zen-frontend\node_modules\primeicons\primeicons.css */"./node_modules/primeicons/primeicons.css");
+__webpack_require__(/*! E:\MEAN\ZenWork\zen-frontend\node_modules\primeng\resources\themes\nova-light\theme.css */"./node_modules/primeng/resources/themes/nova-light/theme.css");
+module.exports = __webpack_require__(/*! E:\MEAN\ZenWork\zen-frontend\node_modules\primeng\resources\primeng.min.css */"./node_modules/primeng/resources/primeng.min.css");
 
 
 /***/ })
